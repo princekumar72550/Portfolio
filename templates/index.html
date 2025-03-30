@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Prince Kumar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#home">Portfolio.</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>"Prince Kumar"</h1>
+                    <p class="subtitle">I'm a <span class="highlight">"Data Scientist"</span></p>
+                    <p class="description">"Creative and detail-focused data scientist specializing in machine learning, data analysis, and statistical modeling. I transform complex data into actionable insights to drive informed decision-making. Skilled in developing predictive models, uncovering data trends, and visualizing findings to optimize processes and identify opportunities."</p>
+                    <a href="{{ url_for('download_cv') }}" class="btn-download">Download CV</a>
+                    
+                    <div class="social-icons">
+                        <a href="https://github.com/princekumar72550" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/prince-kumar-5b3418258/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.threads.net/@prince_raj_1_6" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image-circle"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="page-content">
+            <div class="container">
+                <h1>About Me</h1>
+                <p>"I’m a highly motivated and detail-oriented data science enthusiast with a strong passion for turning data into actionable insights. I’m eager to apply the theoretical knowledge I’ve gained through my education to practical, real-world data projects. With solid problem-solving skills and proficiency in statistical analysis, machine learning, and data visualization, I’m fully committed to driving data-driven decision-making.
+
+                    I’m great at quickly learning and adapting to new technologies and data tools, which keeps me ahead of industry trends. My ability to clearly explain complex findings and work well with cross-functional teams has shone through in various projects and coursework. I thrive in fast-paced environments where I can use data to improve processes, spot opportunities, and deliver real value.</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+
+                <div class="education-list">
+                    <div class="education-item">
+                        <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+                        <p class="education-meta">Maharishi Markandeshwar (Deemed to be University) | 2021 - 2025</p>
+                        <p>Specialized in Data Science, focusing on machine learning, deep learning, data visualization and database management.</p>
+                    </div>
+
+                    <div class="education-item">
+                        <h3>Higher Secondary Education</h3>
+                        <p class="education-meta">Shri Anugrah Narayan Singh Collage Motihari, Bihar | 2019 - 2021</p>
+                        <p>Mathematics, Physics, Chemistry and English.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="page-content">
+            <div class="container">
+                <h1>My Skills</h1>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <h3>Python</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                        <p class="skill-percentage">95%</p>
+                        <p class="skill-description">Advanced Python programming with expertise in data analysis, machine learning, and web development frameworks.</p>
+                    </div>
+                    
+                    
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <h3>AI & ML</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                        <p class="skill-percentage">80%</p>
+                        <p class="skill-description">Proficient in developing machine learning models and implementing AI solutions using TensorFlow and PyTorch.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                        <h3>IIoT</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                        <p class="skill-percentage">95%</p>
+                        <p class="skill-description">Industrial IoT solutions development with sensor integration and data analytics.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Power BI</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                        <p class="skill-percentage">80%</p>
+                        <p class="skill-description">Expert in data visualization and business intelligence dashboards using Power BI.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3>MongoDB</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                        <p class="skill-percentage">80%</p>
+                        <p class="skill-description">NoSQL database management with MongoDB, including schema design and query optimization.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-github"></i></div>
+                        <h3>Git & GitHub</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                        <p class="skill-percentage">90%</p>
+                        <p class="skill-description">Version control expertise using Git and GitHub for collaborative development.</p>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="page-content">
+            <div class="container">
+                <h1>My Projects</h1>
+                <!-- Project filter buttons commented out as requested
+                <div class="project-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web-development">Web Development</button>
+                    <button class="filter-btn" data-filter="mobile-apps">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="database">Database</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                </div>
+                -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="web-development">
+                        <div class="project-image">
+                            <img src="{{ url_for('static', filename='images/dataset-cover.jpg') }}" alt="Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Email Spam Classification using Machine Learning</h3>
+                            <p class="project-tags">Python, Flask, ML, HTML, CSS </p>
+                            <p class="project-description">This project classifies emails as spam or ham using machine learning and NLP techniques. It involves data preprocessing, feature extraction, model training, evaluation, and deployment.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/princekumar72550/Email-Spam-Classifier" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="frontend">
+                        <div class="project-image">
+                            <img src="{{ url_for('static', filename='images/Build-A-Todo.png') }}" alt="Project 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>To-Do List in Python</h3>
+                            <p class="project-tags"> Python </p>
+                            <p class="project-description">A To-Do List in Python is a simple application that allows users to add, remove, and mark tasks as complete.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/princekumar72550/To-Do-App" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="backend">
+                        <div class="project-image">
+                            <img src="{{ url_for('static', filename='images/Project_1.jpg') }}" alt="Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>FYP Home</h3>
+                            <p class="project-tags">Python, Django ,js ,HTML ,CSS ,sqlite3</p>
+                            <p class="project-description">FYP Home is an online platform that helps students find verified, affordable PGs near universities, replacing traditional, time-consuming search methods.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/princekumar72550/find-your-oerfect-home" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <!--
+                    <div class="project-card" data-category="web-development">
+                        <div class="project-image">
+                            <img src="{{ url_for('static', filename='images/project4.jpg') }}" alt="Project 4">
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Website</h3>
+                            <p class="project-tags">HTML, CSS, JavaScript, Flask</p>
+                            <p class="project-description">A personal portfolio website showcasing skills, projects, and professional experience.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="page-content">
+            <div class="container">
+                <h1>My Certificates</h1>
+                <div class="certificate-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="Web Development">Web Development</button>
+                    <button class="filter-btn" data-filter="Programming">Programming</button>
+                    <button class="filter-btn" data-filter="Database">Database</button>
+                    <button class="filter-btn" data-filter="Frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="Full Stack">Full Stack</button>
+                </div>
+                <div class="certificates-grid">
+                    <!-- Azure AI Document Intelligence Certificates -->
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Build a Document Intelligence Custom Skill for Azure AI Search</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on building custom document intelligence skills for Azure AI Search</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Create a Composed Document Intelligence Model</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on creating composed document intelligence models in Azure</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Extract Data from Forms with Azure Document Intelligence</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on extracting data from forms using Azure Document Intelligence</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Use Prebuilt Document Intelligence Models</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on using prebuilt document intelligence models</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Plan an Azure AI Document Intelligence Solution</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on planning Azure AI Document Intelligence solutions</p>
+                    </div>
+                    
+                    <!-- Power Automate Certificates -->
+                    <div class="certificate-card" data-category="Web Development">
+                        <h3>Define Input and Output Parameters in Power Automate</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on defining input and output parameters in Power Automate</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Web Development">
+                        <h3>Build Your First Power Automate for Desktop Flow</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on building your first Power Automate flow for desktop</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Web Development">
+                        <h3>Optimize Your Business Process with Process Advisor</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on optimizing business processes with Process Advisor</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Web Development">
+                        <h3>Use AI Builder in Power Automate</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on using AI Builder in Power Automate</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Web Development">
+                        <h3>Use the Admin Center to Manage Environments and Data Policies in Power Automate</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on using the Admin Center to manage environments and data policies in Power Automate</p>
+                    </div>
+                    
+                    <!-- More Power Automate Certificates -->
+                    <div class="certificate-card" data-category="Web Development">
+                        <h3>Power Automate's Deep Integration Across Multiple Data Sources</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on Power Automate's deep integration with various data sources</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Web Development">
+                        <h3>Build Flows to Manage User Information</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on building flows to manage user information</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Web Development">
+                        <h3>Build Approval Flows with Power Automate</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on building approval flows with Power Automate</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Web Development">
+                        <h3>Get Started with Power Automate</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on getting started with Power Automate</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Web Development">
+                        <h3>Web Automation in Power Automate for Desktop</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on web automation in Power Automate for Desktop</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Web Development">
+                        <h3>Control File and Folder Handling in Power Automate for Desktop</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on file and folder handling in Power Automate for Desktop</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Web Development">
+                        <h3>Automate System, Workstation, and Services Actions in Power Automate for Desktop</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on automating system, workstation, and services actions in Power Automate for Desktop</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Web Development">
+                        <h3>Automating Email Handling in Power Automate for Desktop</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on automating email handling in Power Automate for Desktop</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Web Development">
+                        <h3>Excel Automation in Power Automate for Desktop</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on Excel automation in Power Automate for Desktop</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Web Development">
+                        <h3>Use Power Automate for Desktop to Interact with Windows and Applications</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on using Power Automate for Desktop to interact with Windows and applications</p>
+                    </div>
+                    
+                    <!-- Power Apps Certificates -->
+                    <div class="certificate-card" data-category="Frontend">
+                        <h3>Document and Test Your Power Apps Application</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on documenting and testing Power Apps applications</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Frontend">
+                        <h3>Use and Understand Controls in a Canvas App in Power Apps</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on using and understanding controls in a canvas app in Power Apps</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Frontend">
+                        <h3>Configure Forms, Charts, and Dashboards in Model-Driven Apps</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on configuring forms, charts, and dashboards in model-driven apps</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Frontend">
+                        <h3>Get Started with Model-Driven Apps in Power Apps</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on getting started with model-driven apps in Power Apps</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Frontend">
+                        <h3>Create Tables in Dataverse</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on creating tables in Dataverse for Power Apps</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Frontend">
+                        <h3>How to Build Your First Model-Driven App with Dataverse</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on building your first model-driven app with Dataverse</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Frontend">
+                        <h3>Build a Mobile-Optimized App from Power Apps</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on building mobile-optimized applications using Power Apps</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Frontend">
+                        <h3>Manage Apps in Power Apps</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on managing and administering applications in Power Apps</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Frontend">
+                        <h3>Navigation in a Canvas App in Power Apps</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on implementing navigation features in canvas apps using Power Apps</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Frontend">
+                        <h3>How to Build the User Interface in a Canvas App in Power Apps</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on designing and building user interfaces in canvas apps using Power Apps</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Frontend">
+                        <h3>Customize a Canvas App in Power Apps</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on customizing canvas applications in Power Apps</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Frontend">
+                        <h3>Get Started with Power Apps Canvas Apps</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on getting started with canvas applications in Power Apps</p>
+                    </div>
+                    
+                    <!-- Azure AI Certificates -->
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Create and Consume Azure AI Services</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on creating and consuming Azure AI services for intelligent applications</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Prepare to Develop AI Solutions on Azure</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on preparing to develop AI solutions on the Azure platform</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Fundamentals of Azure AI Speech</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on the fundamentals of Azure AI Speech services and capabilities</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Fundamentals of Conversational Language Understanding</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on the fundamentals of conversational language understanding in Azure AI</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Fundamentals of Question Answering with the Language Service</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on implementing question answering capabilities with Azure Language Service</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Fundamentals of Text Analysis with the Language Service</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on text analysis capabilities using Azure Language Service</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Fundamentals of Optical Character Recognition</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on the fundamentals of optical character recognition using Azure AI services</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Fundamentals of Facial Recognition</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on the fundamentals of facial recognition technology using Azure AI services</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Fundamentals of Computer Vision</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on the fundamentals of computer vision capabilities in Azure AI</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Fundamentals of Azure AI Services</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on the fundamentals of Azure AI services and their applications</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Fundamentals of Machine Learning</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on the fundamentals of machine learning concepts and implementation</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Fundamental AI Concepts</h3>
+                        <p class="certificate-issuer">Issuer: Microsoft</p>
+                        <p class="certificate-description">Training on fundamental artificial intelligence concepts and principles</p>
+                    </div>
+                    
+                    <!-- AWS Certificate -->
+                    <div class="certificate-card" data-category="Full Stack">
+                        <h3>AWS Academy Graduate - AWS Academy Cloud Architecting</h3>
+                        <p class="certificate-issuer">Issuer: Amazon Web Services</p>
+                        <p class="certificate-description">Comprehensive training on AWS cloud architecture principles and best practices</p>
+                    </div>
+                    
+                    <!-- Deloitte Certificate -->
+                    <div class="certificate-card" data-category="Programming">
+                        <h3>Data Analytics job simulation Deloitte</h3>
+                        <p class="certificate-issuer">Issuer: Deloitte</p>
+                        <p class="certificate-description">Practical job simulation focused on data analytics techniques and methodologies</p>
+                    </div>
+                    
+                    <!-- MongoDB Certificates -->
+                    <div class="certificate-card" data-category="Database">
+                        <h3>Getting Started with MongoDB Atlas</h3>
+                        <p class="certificate-issuer">Issuer: MongoDB</p>
+                        <p class="certificate-description">Training on getting started with MongoDB Atlas cloud database service</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Database">
+                        <h3>MongoDB CRUD Operations: Insert and Find Documents</h3>
+                        <p class="certificate-issuer">Issuer: MongoDB</p>
+                        <p class="certificate-description">Training on MongoDB CRUD operations focusing on inserting and finding documents</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Database">
+                        <h3>MongoDB Indexes</h3>
+                        <p class="certificate-issuer">Issuer: MongoDB</p>
+                        <p class="certificate-description">Training on creating and optimizing indexes in MongoDB databases</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Database">
+                        <h3>MongoDB CRUD Operations: Replace and Delete Documents</h3>
+                        <p class="certificate-issuer">Issuer: MongoDB</p>
+                        <p class="certificate-description">Training on MongoDB CRUD operations focusing on replacing and deleting documents</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Database">
+                        <h3>Introduction to MongoDB (For Students)</h3>
+                        <p class="certificate-issuer">Issuer: MongoDB</p>
+                        <p class="certificate-description">Introductory training on MongoDB database concepts for students</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Database">
+                        <h3>MongoDB CRUD Operations: Modifying Query Results</h3>
+                        <p class="certificate-issuer">Issuer: MongoDB</p>
+                        <p class="certificate-description">Training on modifying query results in MongoDB CRUD operations</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Database">
+                        <h3>Connecting to a MongoDB Database</h3>
+                        <p class="certificate-issuer">Issuer: MongoDB</p>
+                        <p class="certificate-description">Training on establishing connections to MongoDB databases</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Database">
+                        <h3>MongoDB Data Modeling Intro</h3>
+                        <p class="certificate-issuer">Issuer: MongoDB</p>
+                        <p class="certificate-description">Introduction to data modeling concepts and best practices in MongoDB</p>
+                    </div>
+                    
+                    <div class="certificate-card" data-category="Database">
+                        <h3>MongoDB Aggregation</h3>
+                        <p class="certificate-issuer">Issuer: MongoDB</p>
+                        <p class="certificate-description">Training on MongoDB aggregation framework for data processing and analysis</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-content">
+            <div class="container">
+                <h1>Contact Me</h1>
+                {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <div class="contact-flash-messages">
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">{{ message }}</div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+<div class="contact-form">
+                    <form method="POST" action="/contact">
+                        <input type="hidden" name="access_key" value="db26a6bf-920b-4faa-8556-41ce2a4f8395">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-send">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="certificateLightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <img class="lightbox-img" id="lightboxImage">
+            <div class="lightbox-nav">
+                <span class="lightbox-prev">&#10094;</span>
+                <span class="lightbox-next">&#10095;</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
