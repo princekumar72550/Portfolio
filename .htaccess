@@ -13,4 +13,3 @@ RewriteRule ^ - [L]
 RewriteRule ^ /index.html [L]
 
 # Set WSGI script path for PythonAnywhere
-SetEnv WSGI_SCRIPT_PATH /home/portfilioprince/mysite/passenger_wsgi.py
